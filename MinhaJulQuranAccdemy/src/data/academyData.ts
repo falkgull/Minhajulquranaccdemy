@@ -3,7 +3,7 @@ import { Course, Tutor, FeePlan, Testimonial, FaqItem, AcademyConfig, CurrencyCo
 export const DEFAULT_ACADEMY_CONFIG: AcademyConfig = {
   name: 'Minhaj-Ul-Quran Online Academy',
   tagline: 'Global Online Quran & Islamic Education with Certified Scholars',
-  logoUrl: '/academy_logo_1787022953709.jpg',
+  logoUrl: 'https://images.unsplash.com/photo-1609599006450-48e9d5045005?auto=format&fit=crop&w=400&q=80',
   phone: '+92 327 1998424',
   whatsappNumber: '+923271998424',
   whatsappMessage: 'Assalam-o-Alaikum! I would like to book a 3-Days Free Trial Quran Class at Minhaj-Ul-Quran Online Academy.',
@@ -59,7 +59,7 @@ export const COURSES: Course[] = [
       'Specialized patience & reward badges for kids',
       'Daily revision (Sabqi) and weekly parent reports',
     ],
-    image: '/noorani_qaida_book_1787026098581.jpg',
+    image: 'https://images.unsplash.com/photo-1589335617150-13f9f38e6e5a?auto=format&fit=crop&w=400&q=80',
     popular: true,
   },
   {
@@ -93,7 +93,7 @@ export const COURSES: Course[] = [
       'Certificate of Completion upon graduation',
       'Flexible scheduling suited for school/work routines',
     ],
-    image: '/nazra_quran_reading_1787026117824.jpg',
+    image: 'https://images.unsplash.com/photo-1609599006450-48e9d5045005?auto=format&fit=crop&w=400&q=80',
     popular: true,
   },
   {
@@ -123,7 +123,7 @@ export const COURSES: Course[] = [
       'Experienced Huffaz with over 10+ years Hifz teaching',
       'Online Hifz Convocation & Verified Certificate',
     ],
-    image: '/hifz_quran_memorize_1787026136305.jpg',
+    image: 'https://images.unsplash.com/photo-1584592183964-009e83670693?auto=format&fit=crop&w=400&q=80',
     popular: true,
   },
   {
@@ -154,7 +154,7 @@ export const COURSES: Course[] = [
       'Illustrated Namaz guide booklet (PDF) included free',
       'Individual audio practice drills for correct recitation',
     ],
-    image: '/namaz_salah_prayer_1787026153004.jpg',
+    image: 'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=400&q=80',
     popular: true,
   },
   {
@@ -184,7 +184,7 @@ export const COURSES: Course[] = [
       'Child-friendly storytelling explaining the context of Duas',
       'Daily practice tracker for parents and students',
     ],
-    image: '/masnoon_duas_hands_1787026167172.jpg',
+    image: 'https://images.unsplash.com/photo-1591955506264-3f5a3832d7aa?auto=format&fit=crop&w=400&q=80',
     popular: true,
   },
   {
@@ -214,7 +214,7 @@ export const COURSES: Course[] = [
       'Available in English, Urdu, and Roman transliteration',
       'Perfect starting companion course with Noorani Qaida',
     ],
-    image: '/six_kalimas_calligraphy_1787026183249.jpg',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80',
     popular: true,
   },
   {
@@ -243,7 +243,7 @@ export const COURSES: Course[] = [
       'Summary study notes provided after each session',
       'Tailored modules for busy professionals',
     ],
-    image: '/tafseer_study_quran_1787026335869.jpg',
+    image: 'https://images.unsplash.com/photo-1607962837359-5e7e88f86772?auto=format&fit=crop&w=400&q=80',
   },
   {
     id: 'quranic-arabic-language',
@@ -271,7 +271,7 @@ export const COURSES: Course[] = [
       'Class recordings available for revision',
       'Personalized feedback on grammar exercises',
     ],
-    image: '/arabic_grammar_book_1787026351767.jpg',
+    image: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=400&q=80',
   },
 ];
 
@@ -396,7 +396,7 @@ export const TUTORS: Tutor[] = [
     rating: 5.0,
     specialization: 'Noorani Qaida for Kids, Female Adult Quran, Masnoon Duas',
     bio: 'Dedicated female instructor with an exceptionally patient, friendly approach for young children and sisters worldwide.',
-    avatar: '/female_quran_tutor_1787023005575.jpg',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
   },
   {
     id: 'hafiz-abdul-rehman',
@@ -424,7 +424,7 @@ export const TUTORS: Tutor[] = [
     rating: 4.9,
     specialization: 'Quran Translation, Tafseer, Seerah & Islamic Tarbiyah',
     bio: 'Inspiring female scholar specializing in deep Quranic contemplation, youth mentoring, and daily Islamic practice for sisters.',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80',
   },
 ];
 
@@ -557,7 +557,7 @@ export const TAJWEED_SURAH_SAMPLES: TajweedSurah[] = [
         transliteration: 'Iyyāka na‘budu wa-iyyāka nasta‘īn',
         translation: 'It is You we worship and You we ask for help.',
         tajweedTip: 'Emphasize the Tashdeed on "Yaa" in "Iyyāka" firmly without pause.',
-        audioUrl: 'https://everyayah.com/data/Alafasy_128kbps/001005.mp3',
+        audioUrl: 'https://everyayah.com/data/Alaf_128kbps/001005.mp3',
       },
       {
         num: 6,
