@@ -3,7 +3,7 @@ import { Course, Tutor, FeePlan, Testimonial, FaqItem, AcademyConfig, CurrencyCo
 export const DEFAULT_ACADEMY_CONFIG: AcademyConfig = {
   name: 'Minhaj-Ul-Quran Online Academy',
   tagline: 'Global Online Quran & Islamic Education with Certified Scholars',
-  logoUrl: '/src/assets/images/academy_logo_1787022953709.jpg',
+  logoUrl: '/academy_logo_1787022953709.jpg',
   phone: '+92 327 1998424',
   whatsappNumber: '+923271998424',
   whatsappMessage: 'Assalam-o-Alaikum! I would like to book a 3-Days Free Trial Quran Class at Minhaj-Ul-Quran Online Academy.',
@@ -59,7 +59,7 @@ export const COURSES: Course[] = [
       'Specialized patience & reward badges for kids',
       'Daily revision (Sabqi) and weekly parent reports',
     ],
-    image: '/src/assets/images/noorani_qaida_book_1787026098581.jpg',
+    image: '/noorani_qaida_book_1787026098581.jpg',
     popular: true,
   },
   {
@@ -93,7 +93,7 @@ export const COURSES: Course[] = [
       'Certificate of Completion upon graduation',
       'Flexible scheduling suited for school/work routines',
     ],
-    image: '/src/assets/images/nazra_quran_reading_1787026117824.jpg',
+    image: '/nazra_quran_reading_1787026117824.jpg',
     popular: true,
   },
   {
@@ -123,7 +123,7 @@ export const COURSES: Course[] = [
       'Experienced Huffaz with over 10+ years Hifz teaching',
       'Online Hifz Convocation & Verified Certificate',
     ],
-    image: '/src/assets/images/hifz_quran_memorize_1787026136305.jpg',
+    image: '/hifz_quran_memorize_1787026136305.jpg',
     popular: true,
   },
   {
@@ -154,7 +154,7 @@ export const COURSES: Course[] = [
       'Illustrated Namaz guide booklet (PDF) included free',
       'Individual audio practice drills for correct recitation',
     ],
-    image: '/src/assets/images/namaz_salah_prayer_1787026153004.jpg',
+    image: '/namaz_salah_prayer_1787026153004.jpg',
     popular: true,
   },
   {
@@ -184,7 +184,7 @@ export const COURSES: Course[] = [
       'Child-friendly storytelling explaining the context of Duas',
       'Daily practice tracker for parents and students',
     ],
-    image: '/src/assets/images/masnoon_duas_hands_1787026167172.jpg',
+    image: '/masnoon_duas_hands_1787026167172.jpg',
     popular: true,
   },
   {
@@ -214,7 +214,7 @@ export const COURSES: Course[] = [
       'Available in English, Urdu, and Roman transliteration',
       'Perfect starting companion course with Noorani Qaida',
     ],
-    image: '/src/assets/images/six_kalimas_calligraphy_1787026183249.jpg',
+    image: '/six_kalimas_calligraphy_1787026183249.jpg',
     popular: true,
   },
   {
@@ -243,7 +243,7 @@ export const COURSES: Course[] = [
       'Summary study notes provided after each session',
       'Tailored modules for busy professionals',
     ],
-    image: '/src/assets/images/tafseer_study_quran_1787026335869.jpg',
+    image: '/tafseer_study_quran_1787026335869.jpg',
   },
   {
     id: 'quranic-arabic-language',
@@ -271,7 +271,7 @@ export const COURSES: Course[] = [
       'Class recordings available for revision',
       'Personalized feedback on grammar exercises',
     ],
-    image: '/src/assets/images/arabic_grammar_book_1787026351767.jpg',
+    image: '/arabic_grammar_book_1787026351767.jpg',
   },
 ];
 
@@ -396,7 +396,7 @@ export const TUTORS: Tutor[] = [
     rating: 5.0,
     specialization: 'Noorani Qaida for Kids, Female Adult Quran, Masnoon Duas',
     bio: 'Dedicated female instructor with an exceptionally patient, friendly approach for young children and sisters worldwide.',
-    avatar: '/src/assets/images/female_quran_tutor_1787023005575.jpg',
+    avatar: '/female_quran_tutor_1787023005575.jpg',
   },
   {
     id: 'hafiz-abdul-rehman',
