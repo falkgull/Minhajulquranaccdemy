@@ -25,6 +25,20 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({ onBookTrial }) =
     ? COURSES
     : COURSES.filter((c) => c.category === activeCategory || (activeCategory === 'kids' && c.category === 'kids'));
 
+  // Core featured course IDs to display in the top quick row
+  const featuredIds = [
+    'noorani-qaida',
+    'quran-reading-tajweed',
+    'quran-memorization-hifz',
+    'namaz-complete-method',
+    'masnoon-duas',
+    'six-kalimas',
+  ];
+
+  const featuredItems = featuredIds
+    .map((id) => COURSES.find((c) => c.id === id))
+    .filter(Boolean) as Course[];
+
   return (
     <section id="courses" className="py-16 md:py-24 bg-[#f8fafc] border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,76 +59,30 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({ onBookTrial }) =
           <div className="mt-8 mb-8 p-5 sm:p-6 bg-white border border-slate-200 hover:border-amber-400 rounded-2xl max-w-5xl mx-auto shadow-md transition-all">
             <div className="text-center mb-5">
               <span className="text-xs font-bold text-amber-800 uppercase tracking-wider font-['Cinzel',serif] flex items-center justify-center gap-2">
-                <img
-                  src="/src/assets/images/academy_logo_1787022953709.jpg"
-                  alt=""
-                  referrerPolicy="no-referrer"
-                  className="w-4 h-4 rounded-full object-cover border border-amber-500/50"
-                />
                 <span>Core Featured Courses (Our Main Curriculum)</span>
               </span>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3.5">
-              {[
-                {
-                  title: 'Noorani Qaida',
-                  sub: 'Kids & Beginners',
-                  id: 'noorani-qaida',
-                  image: '/src/assets/images/noorani_qaida_book_1787026098581.jpg',
-                },
-                {
-                  title: 'Nazra Quran',
-                  sub: 'Tajweed Recitation',
-                  id: 'quran-reading-tajweed',
-                  image: '/src/assets/images/nazra_quran_reading_1787026117824.jpg',
-                },
-                {
-                  title: 'Hifz-ul-Quran',
-                  sub: 'Memorization',
-                  id: 'quran-memorization-hifz',
-                  image: '/src/assets/images/hifz_quran_memorize_1787026136305.jpg',
-                },
-                {
-                  title: 'Complete Salah',
-                  sub: 'Namaz Method',
-                  id: 'namaz-complete-method',
-                  image: '/src/assets/images/namaz_salah_prayer_1787026153004.jpg',
-                },
-                {
-                  title: '40 Masnoon Duas',
-                  sub: 'Daily Supplications',
-                  id: 'masnoon-duas',
-                  image: '/src/assets/images/masnoon_duas_hands_1787026167172.jpg',
-                },
-                {
-                  title: 'Six Kalimas',
-                  sub: 'Tajweed & Meaning',
-                  id: 'six-kalimas',
-                  image: '/src/assets/images/six_kalimas_calligraphy_1787026183249.jpg',
-                },
-              ].map((item, i) => (
+              {featuredItems.map((c) => (
                 <div
-                  key={i}
-                  onClick={() => {
-                    const c = COURSES.find((course) => course.id === item.id);
-                    if (c) setSelectedCourse(c);
-                  }}
+                  key={c.id}
+                  onClick={() => setSelectedCourse(c)}
                   className="bg-slate-50 hover:bg-white border border-slate-200 hover:border-amber-400 p-3 rounded-xl text-center cursor-pointer transition-all duration-300 hover:-translate-y-1 group shadow-sm hover:shadow-md flex flex-col items-center justify-between"
                 >
                   <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden mb-2.5 p-0.5 bg-gradient-to-tr from-amber-400/40 via-emerald-400/30 to-amber-400/40 group-hover:from-amber-400 group-hover:to-emerald-400 transition-all flex-shrink-0 shadow-sm">
                     <img
-                      src={item.image}
-                      alt={item.title}
+                      src={c.image}
+                      alt={c.title}
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover rounded-[10px] group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-900 group-hover:text-amber-800 leading-snug">
-                      {item.title}
+                      {c.title}
                     </p>
                     <p className="text-[10px] text-slate-500 group-hover:text-slate-600 mt-0.5 font-medium leading-tight">
-                      {item.sub}
+                      {c.tag}
                     </p>
                   </div>
                 </div>
