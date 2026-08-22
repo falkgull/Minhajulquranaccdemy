@@ -1,7 +1,7 @@
 export const DEFAULT_ACADEMY_CONFIG: any = {
   name: 'Minhaj-Ul-Quran Online Academy',
   tagline: 'Global Online Quran & Islamic Education with Certified Scholars',
-  logoUrl: '/academy_logo_178702293709.jpg',
+  logoUrl: '',
   phone: '+92 327 1998424',
   whatsappNumber: '+923271998424',
   whatsappMessage: 'Assalam-o-Alaikum!',
@@ -23,7 +23,7 @@ export const COURSES: any[] = [
     title: 'Noorani Qaida',
     category: 'kids',
     shortDesc: 'Basic Qaida for kids.',
-    image: '/noorani_qaida_book_1787026098581.jpg',
+    image: '',
     popular: true,
   },
   {
@@ -31,7 +31,7 @@ export const COURSES: any[] = [
     title: 'Nazra Quran',
     category: 'beginners',
     shortDesc: 'Quran reading with Tajweed.',
-    image: '/nazra_quran_reading_1787026117824.jpg',
+    image: '',
     popular: true,
   },
   {
@@ -39,7 +39,7 @@ export const COURSES: any[] = [
     title: 'Hifz-ul-Quran',
     category: 'memorization',
     shortDesc: 'Full Quran Memorization.',
-    image: '/hifz_quran_memorize_1787026136305.jpg',
+    image: '',
     popular: true,
   }
 ];
