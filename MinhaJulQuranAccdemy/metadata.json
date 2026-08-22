@@ -1,6 +1,0 @@
-{
-  "name": "Minhaj-Ul-Quran Online Academy",
-  "description": "Professional Online Quran Academy website with courses, fee calculator, certified male & female tutors, 3-day free trial registration, and direct WhatsApp support.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
