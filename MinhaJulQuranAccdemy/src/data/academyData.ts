@@ -1,6 +1,4 @@
-import { Course, Tutor, FeePlan, FaqItem, AcademyConfig, CurrencyConfig, TajweedSurah } from '../types';
-
-export const DEFAULT_ACADEMY_CONFIG: AcademyConfig = {
+export const DEFAULT_ACADEMY_CONFIG: any = {
   name: 'Minhaj-Ul-Quran Online Academy',
   tagline: 'Global Online Quran & Islamic Education with Certified Scholars',
   logoUrl: '/academy_logo_178702293709.jpg',
@@ -18,178 +16,92 @@ export const DEFAULT_ACADEMY_CONFIG: AcademyConfig = {
   countriesCount: '48+',
 };
 
-export const CURRENCIES: CurrencyConfig[] = [
+export const CURRENCIES: any[] = [
   { code: 'PKR', symbol: 'Rs', name: 'Pakistani Rupee', flag: '🇵🇰', rateToUsd: 280 },
   { code: 'USD', symbol: '$', name: 'US Dollar', flag: '🇺🇸', rateToUsd: 1.0 },
 ];
 
-export const COURSES: Course[] = [
+export const COURSES: any[] = [
   {
     id: 'noorani-qaida',
     title: 'Noorani Qaida for Beginners & Kids',
-    arabicTitle: 'نورانی قاعدہ',
     category: 'kids',
-    tag: 'Foundational',
     shortDesc: 'The essential starting foundation for children and beginners.',
-    fullDesc: 'Noorani Qaida is the gold standard classical primer designed to teach correct pronunciation.',
-    duration: '2 to 4 Months',
-    prerequisites: 'None',
-    recommendedAge: 'Kids (Age 4+)',
-    curriculum: ['Alphabet', 'Joined Letters', 'Vowels'],
-    features: ['1-on-1 Classes'],
     image: '/noorani_qaida_book_1787026098581.jpg',
     popular: true,
   },
   {
     id: 'quran-reading-tajweed',
     title: 'Nazra Quran Majeed with Tajweed',
-    arabicTitle: 'ناظرہ قرآن مجید',
     category: 'beginners',
-    tag: 'Core Essential',
     shortDesc: 'Master fluent and melodious recitation of the Holy Quran.',
-    fullDesc: 'Learn to recite the Holy Quran with fluency and proper rhythm.',
-    duration: '6 to 12 Months',
-    prerequisites: 'Basic Qaida',
-    recommendedAge: 'All Ages',
-    curriculum: ['Makharij', 'Tajweed'],
-    features: ['Live Correction'],
     image: '/nazra_quran_reading_1787026117824.jpg',
     popular: true,
   },
   {
     id: 'quran-memorization-hifz',
     title: 'Hifz-ul-Quran Majeed (Memorization)',
-    arabicTitle: 'حفظ القرآن مجید',
     category: 'memorization',
-    tag: 'Prestigious',
     shortDesc: 'Structured full or partial Hifz program.',
-    fullDesc: 'Memorize the entire Holy Quran with systematic revisions.',
-    duration: '2 to 3.5 Years',
-    prerequisites: 'Fluent Reading',
-    recommendedAge: 'Ages 6+',
-    curriculum: ['Sabaq', 'Manzil'],
-    features: ['Daily Testing'],
     image: '/hifz_quran_memorize_1787026136305.jpg',
     popular: true,
   },
   {
     id: 'namaz-complete-method',
     title: 'Complete Method of Salah / Namaz',
-    arabicTitle: 'نماز کا مکمل طریقہ',
     category: 'islamic-studies',
-    tag: 'Daily Fardh',
     shortDesc: 'Step-by-step practical method of 5 daily prayers.',
-    fullDesc: 'Learn the exact method of performing prayers according to Sunnah.',
-    duration: '1 to 2 Months',
-    prerequisites: 'None',
-    recommendedAge: 'All Ages',
-    curriculum: ['Wudu', 'Postures'],
-    features: ['Practical Demo'],
     image: '/namaz_salah_prayer_1787026153004.jpg',
     popular: true,
   },
   {
     id: 'masnoon-duas',
     title: '40 Essential Masnoon Duas & Daily Azkar',
-    arabicTitle: 'مسنون دعائیں',
     category: 'islamic-studies',
-    tag: 'Sunnah Lifestyle',
     shortDesc: 'Authentic Masnoon Duas for daily life.',
-    fullDesc: 'Powerful supplications for every daily action.',
-    duration: '2 to 3 Months',
-    prerequisites: 'None',
-    recommendedAge: 'All Ages',
-    curriculum: ['Routine Duas'],
-    features: ['Audio Clips'],
     image: '/masnoon_duas_hands_1787026167172.jpg',
     popular: true,
   },
   {
     id: 'six-kalimas',
     title: 'Six Kalimas with Tajweed',
-    arabicTitle: 'چھ کلمے',
     category: 'islamic-studies',
-    tag: 'Core Aqeedah',
     shortDesc: 'Six fundamental Kalimas of Islam.',
-    fullDesc: 'Learn to recite and understand foundational beliefs.',
-    duration: '1 Month',
-    prerequisites: 'None',
-    recommendedAge: 'All Ages',
-    curriculum: ['Kalima 1-6'],
-    features: ['Phonetics'],
     image: '/six_kalimas_calligraphy_1787026183249.jpg',
     popular: true,
   },
   {
     id: 'quran-translation-tafseer',
     title: 'Quran Translation & Tafseer',
-    arabicTitle: 'تَرْجَمَة وَتَفْسِير القُرْآن',
     category: 'advanced',
-    tag: 'Deep Contemplation',
     shortDesc: 'Understand the divine message.',
-    fullDesc: 'Explore linguistic nuances and historical context.',
-    duration: '1 to 2 Years',
-    prerequisites: 'Basic Reading',
-    recommendedAge: 'Teens & Adults',
-    curriculum: ['Translation'],
-    features: ['Bilingual'],
     image: '/tafseer_study_quran_1787026335869.jpg',
   },
   {
     id: 'quranic-arabic-language',
     title: 'Quranic Arabic & Grammar',
-    arabicTitle: 'اللُّغَة العَرَبِيَّة لِفَهْمِ القُرْآن',
     category: 'advanced',
-    tag: 'Linguistic Mastery',
     shortDesc: 'Learn Quranic Arabic grammar.',
-    fullDesc: 'Comprehend the Quran directly without translation.',
-    duration: '6 to 12 Months',
-    prerequisites: 'Basic Reading',
-    recommendedAge: 'Youth & Adults',
-    curriculum: ['Grammar'],
-    features: ['Drills'],
     image: '/arabic_grammar_book_1787026351767.jpg',
   },
 ];
 
-export const FEE_PLANS: FeePlan[] = [
-  {
-    id: 'plan-3days',
-    name: '3 Days / Week',
-    daysPerWeek: 3,
-    classesPerMonth: 12,
-    durationPerClass: '30 Minutes',
-    baseUsdPrice: 48,
-    pkrPrice: 3500,
-    popular: true,
-    features: ['12 Classes / Month', '30 Minutes', 'Free Trial'],
-  },
-];
-
-export const TUTORS: Tutor[] = [
+export const FEE_PLANS: any[] = [];
+export const TUTORS: any[] = [
   {
     id: 'qari-muhammad-ahsan',
     name: 'Qari Muhammad Ahsan',
     title: 'Senior Qari & Tajweed Master',
-    gender: 'male',
-    qualification: 'Alimiyyah',
-    experienceYears: 12,
-    languages: ['English', 'Urdu'],
-    studentsTaught: 850,
-    rating: 4.9,
-    specialization: 'Tajweed',
-    bio: 'Renowned scholar.',
     avatar: '/female_quran_tutor_1787023005575.jpg',
-  },
+  }
 ];
-
-export const FAQS: FaqItem[] = [
+export const FAQS: any[] = [];
+export const TAJWEED_SURAH_SAMPLES: any[] = [];
+export const TESTIMONIALS: any[] = [
   {
-    id: 'faq-1',
-    category: 'general',
-    question: 'How do 1-on-1 Online Quran classes work?',
-    answer: 'Classes take place live via Zoom or Skype with shared screen support.',
-  },
+    id: '1',
+    name: 'Ahmed Khan',
+    comment: 'Great academy, teachers are very polite and cooperative.',
+    rating: 5,
+  }
 ];
-
-export const TAJWEED_SURAH_SAMPLES: TajweedSurah[] = [];
